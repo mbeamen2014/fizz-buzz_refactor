@@ -11,7 +11,13 @@ $(document).ready(function() {
     function promptName()
         {
             var integer = prompt("Enter a number: ", "")
+			
+			if (integer % 1 === 0 ){
             return integer;
+			}
+			else{
+			alert('Sorry. That\'s not an integer. Reload the page and try again.');
+			}
         }
 
 	function countOut(num) {
