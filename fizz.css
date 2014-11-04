@@ -1,0 +1,50 @@
+*{
+margin: 0; padding: 0;
+}
+
+html, body{
+	    height: 100%;
+	    width: 100%;
+	}
+
+#numbers{
+background: gray;
+width: 90%;
+height: 90%;
+position: absolute;
+margin: 2.5% 5% 2.5% 5%;
+text-align: left;
+}
+
+#numbers-list::before {
+content:'';
+display: inline-block;
+height: 100%;
+vertical-align: middle;
+margin-left: 45%;
+}
+
+#start{
+height: 50px;
+padding: 2px;
+color: blue;
+font-weight: bold;
+
+}
+
+#numbers-list { 
+        position: absolute; 
+		top: 40px; 
+		left: 5px; 
+		width:99%;
+		height:90%; 
+		border:1px solid green;
+        white-space: nowrap;
+		overflow: auto;
+		background: white;
+		
+		}
+		
+#numbers-list ul {list-style: none;  white-space: nowrap; margin:0px;  display: inline-block;}
+
+#numbers-list ul li { font-size: 100px; display: inline-block; float: left; position: relative; margin-left:5px; margin-right: 5px; }
